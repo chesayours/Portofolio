@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Aplikasi Pembelajaran - Aisyah Altiarika</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="card">
+        <!-- Sidebar Profil Kiri -->
+        <div class="card-header">
+            <div class="header-top">
+                <button id="darkModeToggle" class="dark-mode-btn" type="button">
+                    <span id="themeIcon">🌙</span> <span id="themeText">Dark Mode</span>
+                </button>
+            </div>
+            <img src="favicon.png" alt="Logo Aisyah Altiarika" class="site-logo">
+            <img src="chesa.jpg" alt="Foto Profil Aisyah Altiarika" class="profile-img">
+            <h1>Aisyah Altiarika</h1>
+            <p>Pelajar & Creative Developer</p>
+
+            <div class="section-title" style="color: #ffffff; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">Media Sosial</div>
+            <div class="social-container" style="justify-content: center;">
+                <a href="https://instagram.com/chesains" target="_blank" class="social-btn">
+                    <img src="ig.png" alt="Logo Instagram" class="social-icon">
+                    Instagram
+                </a>
+                <a href="https://tiktok.com/@snoweechesaa" target="_blank" class="social-btn">
+                    <img src="tiktok.png" alt="Logo TikTok" class="social-icon">
+                    TikTok
+                </a>
+            </div>
+        </div>
+
+        <!-- Konten Detail Video (Kolom Kanan) -->
+        <div class="card-body">
+            <div style="margin-bottom: 20px;">
+                <a href="index.html" class="btn-detail" style="width: auto; padding: 8px 18px;">&larr; Kembali ke Beranda</a>
+            </div>
+
+            <div class="section-title">Membuat Aplikasi Pembelajaran</div>
+            <h1 style="color: #4a2e80; margin-bottom: 15px; font-size: 24px;">Aplikasi Pembelajaran Komposisi Matematika</h1>
+
+            <!-- Thumbnail / Gambar Projek -->
+            <div style="width: 100%; border-radius: 12px; overflow: hidden; border: 1px solid #e9d8fd; margin-bottom: 25px; background: #faf7ff;">
+                <img src="karya4.jpeg" alt="Membuat Aplikasi Pembelajaran" style="width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;">
+            </div>
+
+            <!-- Tabel Tanggal & Detail Pembuatan -->
+            <div class="section-title">Informasi Pembuatan Projek</div>
+            <table class="info-table">
+                <tr>
+                    <th>Tanggal Pembuatan</th>
+                    <td>18 Oktober 2026</td>
+                </tr>
+                <tr>
+                    <th>Platform Publikasi</th>
+                    <td>YouTube</td>
+                </tr>
+                <tr>
+                    <th>Kategori Projek</th>
+                    <td>Pengembangan Aplikasi & Edukasi</td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>Dipublikasikan</td>
+                </tr>
+            </table>
+
+            <!-- Deskripsi Karya -->
+            <div class="section-title">Deskripsi Projek</div>
+            <div class="project-item" style="border-left-color: #8f73d2; font-size: 15px; margin-bottom: 25px;">
+                <p style="margin: 0; line-height: 1.7;">
+                    Video ini mendokumentasikan proses pembuatan aplikasi media pembelajaran interaktif dari tahap awal perancangan tampilan antarmuka (UI), penyusunan materi, hingga pengujian fitur agar mudah digunakan oleh pelajar.
+                </p>
+            </div>
+
+            <!-- Tombol Menuju Link Video -->
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="https://youtu.be/b1epGQL8aZo?si=G4atkvj0ZadohNxB" target="_blank" class="btn-back" style="padding: 12px 28px; font-size: 15px; background-color: #6b46c1;">
+                    ▶ Tonton Video di YouTube
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleBtn = document.getElementById('darkModeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+
+            toggleBtn.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+
+                if (document.body.classList.contains('dark-mode')) {
+                    themeIcon.textContent = '☀️';
+                    themeText.textContent = 'Light Mode';
+                } else {
+                    themeIcon.textContent = '🌙';
+                    themeText.textContent = 'Dark Mode';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

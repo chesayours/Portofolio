@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Kemasan Parfume - Aisyah Altiarika</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="card">
+        <!-- Sidebar Profil Kiri (Sama seperti index.html) -->
+        <div class="card-header">
+            <div class="header-top">
+                <button id="darkModeToggle" class="dark-mode-btn" type="button">
+                    <span id="themeIcon">🌙</span> <span id="themeText">Dark Mode</span>
+                </button>
+            </div>
+            <img src="favicon.png" alt="Logo Aisyah Altiarika" class="site-logo">
+            <img src="chesa.jpg" alt="Foto Profil Aisyah Altiarika" class="profile-img">
+            <h1>Aisyah Altiarika</h1>
+            <p>Pelajar & Creative Developer</p>
+
+            <div class="section-title" style="color: #ffffff; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">Media Sosial</div>
+            <div class="social-container" style="justify-content: center;">
+                <a href="https://instagram.com/chesains" target="_blank" class="social-btn">
+                    <img src="ig.png" alt="Logo Instagram" class="social-icon">
+                    Instagram
+                </a>
+                <a href="https://tiktok.com/@snoweechesaa" target="_blank" class="social-btn">
+                    <img src="tiktok.png" alt="Logo TikTok" class="social-icon">
+                    TikTok
+                </a>
+            </div>
+        </div>
+
+        <!-- Konten Detail Karya (Kolom Kanan) -->
+        <div class="card-body">
+            <div style="margin-bottom: 20px;">
+                <a href="index.html" class="btn-detail" style="width: auto; padding: 8px 18px;">&larr; Kembali ke Beranda</a>
+            </div>
+
+            <div class="section-title">Desain Kemasan Parfume</div>
+            <h1 style="color: #4a2e80; margin-bottom: 15px; font-size: 24px;">Starlight Parfume</h1>
+
+            <!-- Gambar Karya -->
+            <div style="width: 100%; border-radius: 12px; overflow: hidden; border: 1px solid #e9d8fd; margin-bottom: 25px; background: #faf7ff;">
+                <img src="karya1.png" alt="Desain Kemasan Parfume" style="width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;">
+            </div>
+
+            <!-- Informasi Pengerjaan (Tabel) -->
+            <div class="section-title">Informasi Pengerjaan</div>
+            <table class="info-table">
+                <tr>
+                    <th>Waktu Pengerjaan</th>
+                    <td>12 November 2026</td>
+                </tr>
+                <tr>
+                    <th>Software Digunakan</th>
+                    <td>CorelDRAW 2024</td>
+                </tr>
+                <tr>
+                    <th>Kategori Karya</th>
+                    <td>Branding & Packaging</td>
+                </tr>
+                <tr>
+                    <th>Status Projek</th>
+                    <td>Selesai</td>
+                </tr>
+            </table>
+
+            <!-- Deskripsi Karya -->
+            <div class="section-title">Deskripsi Karya</div>
+            <div class="project-item" style="border-left-color: #8f73d2; font-size: 15px;">
+                <p style="margin: 0; line-height: 1.7; color: #4a5568;">
+                    Karya ini merupakan perancangan visual kemasan produk parfum premium. Desain mengusung konsep minimalis modern dengan perpaduan warna pastel yang lembut untuk memberikan keharmonisan antara estetika visual dan nuansa wewangian yang elegan.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleBtn = document.getElementById('darkModeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+
+            toggleBtn.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+
+                if (document.body.classList.contains('dark-mode')) {
+                    themeIcon.textContent = '☀️';
+                    themeText.textContent = 'Light Mode';
+                } else {
+                    themeIcon.textContent = '🌙';
+                    themeText.textContent = 'Dark Mode';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
